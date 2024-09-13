@@ -6,7 +6,7 @@
     --primary-color-light: #a3a3a3;
     --white: #ffffff;
     --max-width: 900px;
-    --gradient-1: linear-gradient(to right bottom, #f77d6b, #9e1fdb)
+    --gradient-1: linear-gradient(to right bottom, #f77d6b, #9e1fdb);
     --graident-2: linear-gradient(
     to right bottom,
     var(--white) 25%,
@@ -20,23 +20,23 @@
     box-sizing: border-box;
 }
 
-.section_container{
+.section_container {
     max-width: var(--max-width);
     margin: auto;
     padding: 5rem 1rem;
 }
 
-img{
+img {
     display: flex;
     width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
     transition: 0.3s;
 }
 
-ul{
+ul { 
     list-style: none;
 }
 
@@ -66,20 +66,19 @@ body {
     background-color: var(--primary-color);
 }
 
-.nav_logo a {
-    font-size: 1.2rem;
+.nav_logo a{
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--white);
   }
-  
-  .nav__menu__btn {
+.nav_menu_btn {
     font-size: 1.5rem;
     color: var(--white);
     cursor: pointer;
-  }
+}
 
 .nav_links{
-    position: absolute;
+  position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
@@ -92,17 +91,63 @@ body {
   background-color: var(--primary-color);
   transition: 0.5s;
   z-index: -1;
-  /*transform: translateY(-100%);*/
+  transform: translateY(-100%);
 }
 
 .nav_links.open {
     transform: translateY(0);
-  }
+ }
   
-  .nav_links a {
+.nav_links a {
     color: var(--primary-color-light);
-  }
-  
-  .nav_links a:hover {
+}
+
+.nav_links a:hover {
     color: var(--white);
-  }
+}
+.iframe{
+    text-align: center;  
+    
+}
+.section_container h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--white);
+}
+.section_container p{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--white);
+
+}
+@media(width > 768px){
+  nav {
+        background-color: var(--primary-color);
+    }
+
+    .nav_bar{
+        position: static;
+        padding: 1.75rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .nav_header{
+        padding: 0;
+        background-color: transparent;
+    }
+   .nav_menu_btn{
+        display: none;
+   }
+    .nav_links{
+        position: static;
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 4rem;
+        background-color: transparent;
+        transform: none;
+        z-index: 1;
+  } 
+}
