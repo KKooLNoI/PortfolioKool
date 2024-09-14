@@ -23,7 +23,7 @@
 .section_container {
     max-width: var(--max-width);
     margin: auto;
-    padding: 5rem 1rem;
+    padding: 5rem 0.5rem;
 }
 
 img {
@@ -113,13 +113,88 @@ body {
     font-size: 3rem;
     text-align: center;
     color: var(--white);
+    padding-top: 0.5rem;
+}
+.section_container h2 {
+    font-size: 1.25rem;
+    color: var(--white);
+    text-align: center;
 }
 .section_container p{
     font-size: 1rem;
     text-align: center;
     color: var(--white);
+    padding-top: 0.5rem;
 
 }
+
+.education_container h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.education_container h2{
+    font-size: 1.5rem;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.PSV {
+    background-image: linear-gradient(43deg,#248d02 10% ,#5bee3a 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-left: 10px;
+
+}
+
+.DSN{
+    background-image: linear-gradient(43deg,#03f623 50%,#fcf404 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-left: 10px;
+
+}
+
+.RMUTP{
+    color: #9e1fdb;
+    padding-left: 10px;
+}
+
+.KMUTNB{
+    color: #fb8804;
+    padding-left: 10px;
+
+}
+
+.experience_container h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.experience_grid {
+    display: grid;
+    gap: 2rem;
+}
+.experience_card { 
+    max-width: 450px;
+    margin-inline: auto;
+    background-color: var(--primary-color-light);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(width > 768px){
   nav {
         background-color: var(--primary-color);
