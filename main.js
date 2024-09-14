@@ -35,7 +35,7 @@ ScrollReveal().reveal(".header__btns", {
   delay: 1500,
 });
 
-ScrollReveal().reveal(".education_head", {
+ScrollReveal().reveal(".education_container", {
   ...scrollRevealOption,
   interval: 500,
 });
