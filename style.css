@@ -76,7 +76,6 @@ body {
     color: var(--white);
     cursor: pointer;
 }
-
 .nav_links{
   position: absolute;
   top: 100%;
@@ -93,7 +92,6 @@ body {
   z-index: -1;
   transform: translateY(-100%);
 }
-
 .nav_links.open {
     transform: translateY(0);
  }
@@ -108,34 +106,35 @@ body {
 .iframe{
     text-align: center;  
     
+    
 }
-.section_container h1 {
-    font-size: 3rem;
+.header_container{
     text-align: center;
     color: var(--white);
-    padding-top: 0.5rem;
+    padding: 3rem 1rem;
+    
 }
-.section_container h2 {
-    font-size: 1.25rem;
-    color: var(--white);
-    text-align: center;
-}
-.section_container p{
+.header_container p {
     font-size: 1rem;
-    text-align: center;
-    color: var(--white);
-    padding-top: 0.5rem;
-
 }
 
+.education_container{
+    text-align: center;
+    color: var(--white);
+    align-items: center;
+    margin: auto;
+    padding: 5rem 1rem;
+    max-width: var(--max-width);
+}
 .education_container h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 .education_container h2{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: left;
     padding-top: 1rem;
+    padding-left: 50px;
 }
 
 .PSV {
@@ -165,29 +164,60 @@ body {
 
 }
 
+.experince_container{
+    text-align: center;
+    color: var(--white);
+    justify-content: space-between;
+    margin: auto;
+    padding: 5rem 1rem;
+    max-width: var(--max-width);
+}
 .experince_container h1{
     text-align: center;
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 .experince_grid {
     display: grid;
     gap: 2rem;
+    
 }
-.experince_card { 
+.experience_card { 
     max-width: 450px;
     margin-inline: auto;
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-color);
     border-radius: 1rem;
     overflow: hidden;
 }
 
-.experince_card_details{
+.experience_card img {
+    width: 400px;
+    height: 300px;
+}
+
+.experience_card_details{
     padding: 1rem;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 1rem;
+}
+
+.experince_card_details p {
+    font-size: 14px;
+}
+
+.project_container {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.project_grid {
+    display: grid;
+    gap: 2rem;
+}
+.project_card {
+    
 }
 
 
@@ -201,6 +231,27 @@ body {
 
 
 
+
+
+
+
+
+
+
+.blog_container{
+    text-align: center;
+    color: var(--white);
+    align-items: center;
+    margin: auto;
+    padding: 5rem 1rem;
+    max-width: var(--max-width);
+}
+.blog_container h1{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
 
 @media(width > 768px){
   nav {
@@ -244,5 +295,8 @@ body {
 
   .experince_grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .experince_container img {
+    
   }
 }

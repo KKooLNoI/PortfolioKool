@@ -19,18 +19,18 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
-ScrollReveal().reveal(".header__container img", {
+ScrollReveal().reveal(".header_container img", {
   ...scrollRevealOption,
 });
-ScrollReveal().reveal(".header__container h1", {
+ScrollReveal().reveal(".header_container h1", {
   ...scrollRevealOption,
   delay: 500,
 });
-ScrollReveal().reveal(".header__container p", {
+ScrollReveal().reveal(".header_container p", {
   ...scrollRevealOption,
   delay: 1000,
 });
-ScrollReveal().reveal(".header__btns", {
+ScrollReveal().reveal(".header_btns", {
   ...scrollRevealOption,
   delay: 1500,
 });
@@ -40,7 +40,12 @@ ScrollReveal().reveal(".education_container", {
   interval: 500,
 });
 
-ScrollReveal().reveal(".experience__list li", {
+ScrollReveal().reveal(".experience_list li", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+ScrollReveal().reveal(".project_list li", {
   ...scrollRevealOption,
   interval: 500,
 });
