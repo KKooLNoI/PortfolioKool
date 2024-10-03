@@ -25,8 +25,33 @@ new Swiper('.card-wrapper', {
         slidesPerView: 3
       },
     }
-
-
-
-
   });
+
+// Select all buttons with the class 'card-link'
+const cardLinks = document.querySelectorAll('.card-link');
+const popups = document.querySelectorAll('.popup-overlay');
+const closeButtons = document.querySelectorAll('.close-btn');
+
+// Loop through each card link and add an event listener
+cardLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        const popupId = link.getAttribute('data-popup');
+        const popup = document.getElementById(popupId);
+        popup.style.display = 'flex'; // Show the specific popup
+    });
+});
+
+// Add event listeners to close the popups
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        button.closest('.popup-overlay').style.display = 'none';
+    });
+});
+
+// Close the popup if the user clicks outside the popup content
+window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('popup-overlay')) {
+        e.target.style.display = 'none';
+    }
+});
+
