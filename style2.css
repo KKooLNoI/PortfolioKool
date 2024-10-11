@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 *{
     margin: 0;
@@ -7,7 +7,7 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Bai Jamjuree", sans-serif;;
 }
 
 html{
@@ -165,17 +165,17 @@ span{
     min-width: 280px;
 }
 
-.typing-animation span{
+.typing-animation span {
     position: relative;
 }
 
-.typing-animation span::before{
+.typing-animation span::before {
     content: "software Developer";
     color:#000;
     animation: words 20s infinite;
 }
 
-.typing-animation span::after{
+.typing-animation span::after {
     content: "";
     background-color: #fff;
     position: absolute;
@@ -220,17 +220,24 @@ span{
     font-weight: 400;
 }
 
+.skillss {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+
 .skills {
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
+    
 }
 
 .skills h1 {
     color: #000;
-    font-size: 20px;
+    font-size: 3rem;
     text-align: center;
 }
+
 .skill-name {
     font-size: 18px;
     font-weight: 700;
@@ -271,7 +278,7 @@ span{
     width: 10px;
     height: 10px;
     background: #000;
-    top: -15px;
+    top: -18px;
     right: 0;
     transform: translateX(50%) rotate(45deg);
     border-radius: 2px;
@@ -286,6 +293,23 @@ span{
     }
 }
 
+.Goal {
+    color: #000;
+    
+}
+
+.Goal h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.Goal h3 {
+    font-size: 2rem;
+    padding-top: 4rem;
+    font-weight: 500;
+    padding: 20px;
+}
+
 .interest {
     color: #000;
     font-size: 20px;
@@ -296,9 +320,10 @@ span{
 .services h2 {
     margin-bottom: 5rem;
 }
+
 .service-container{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
@@ -335,6 +360,7 @@ span{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
     color: #fff;
+    line-height: 3rem;
 }
 
 .service-container .services-box:hover i {
@@ -482,6 +508,7 @@ span{
     border: 2px solid transparent;
     box-shadow: 0 10px 10px rgba(0,0,0,0.05);
     transition: 0.2s ease;
+    cursor: pointer;
 }
 
 .card-list  .card-item .card-link:hover{
@@ -510,7 +537,7 @@ span{
     font-size: 1.3rem;
     color: #000;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
 }
 
 .card-list .card-link .card-button{
@@ -561,17 +588,73 @@ span{
     cursor: pointer;
     color: #000;
 }
+
+.popup-overlay img {
+    width: 50%;
+    padding-top: 5px;
+}
+
+.popup-overlay h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.project-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+    transition: 0.3s ease;
+}
+
+.project-card:hover{
+    box-shadow: 0 0 25px ,
+                0 0 50px ;
+    transform: scale(1.02);
+}
+
+.project-card img {
+    max-width: 300px;
+    border-radius: 2em;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    color: #000;
+}
+
+.project-card p {
+    color: #000;
+}
+
 .blog-content{
-    max-width: 600px;
-    height: 400px;
+    max-width: 800px;
+    height: 600px;
+    line-height: 25px;
 }
 
 .blog .blog-container {
     display: grid;
    grid-template-columns: repeat(2,1fr);
 }
-
-
 
 .blog .blog-container .box{
     position: relative;
@@ -601,19 +684,92 @@ span{
 
 
 .blog-content h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
 }
-
+.blog-content h2 {
+    font-size: 1.6rem;
+}
 .blog-content p {
-    font-size: 18px;
+    font-size: 1.4rem;
     padding: 3px;
 }
 
+.logo-slide {
+    width: 90%;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+}
 
+@keyframes scrollleft {
+    to {
+        left: -200px;
+    }
+}
+.item {
+    position: absolute;
+    left: 100%;
+    animation-name: scrollleft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
+.item1 {
+    animation-delay: calc(20s / 6 * (6 - 1));
+}
+
+.item2 {
+    animation-delay: calc(20s / 6 * (6 - 2));
+}
+
+.item3 {
+    animation-delay: calc(20s / 6 * (6 - 3));
+}
+
+.item4 {
+    animation-delay: calc(20s / 6 * (6 - 4));
+}
+
+.item5 {
+    animation-delay: calc(20s / 6 * (6 - 5));
+}
+
+.item6 {
+    animation-delay: calc(20s / 6 * (6 - 6));
+}
+
+.logo-slide i {
+    color: #000;
+    font-size: 5rem
+}
+
+.logo-slide img {
+    height: 40px;
+    width: 50px;
+}
+
+.credit h2 {
+    color: #000;
+    font-size: 5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.credit p {
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+    background-color: #8c8b8b;
+    max-width: 100%;
+    font-size: 14px;
+}
 
 
 @media(max-width:995px){
@@ -695,7 +851,47 @@ span{
     }
 }
 
+@media (max-width: 480px){
+    .about_container{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .skillss{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .service-container{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        align-items: center;
+    }
+    .blog .blog-container {
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+}
 
+@media (max-width: 720px ){
+    .project-box {
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .skillss{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+}
+
+@media  (max-width: 1024px ){
+    .project-box {
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .skillss{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+}
 
 
 @keyframes cursor{
