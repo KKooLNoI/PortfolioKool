@@ -23,46 +23,65 @@ body{
 }
 
 header{
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
+    height: 80px;
+    background-color: #000;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    justify-content: space-between;
+    padding: 0 100px;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
-    color: #000;
+    color: #fff;
     font-weight: 800;
-    cursor: pointer;
-    transition: 0.5s ease;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
-nav a{
-    font-size: 1.8rem;
+.nav-bar ul {
+    display: flex;
+}
+.nav-bar ul  a {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul a:hover{
     color: #000;
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+    background-color: #fff;
+}
+@media only screen and (max-width: 1320px){
+    header {
+        padding: 0 50px;
+    }
 }
 
-nav a:hover,
-nav a.active{
-    color: #000;
-    border-bottom: 3px solid #000;
+@media only screen and (max-width: 1100px){
+    header {
+        padding: 0 30px ;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section{
     min-height: 100vh;
@@ -77,9 +96,12 @@ section{
     background-color: #fff;
 }
 
+.home-content img {
+    width: 50%;
+}
 
 .home .home-content h1{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -89,13 +111,19 @@ span{
 }
 
 .home-content h3{
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: #000;
 }
 
 .home-content p{
-    font-size: 1.6rem;
+    font-size: 2rem;
+}
+
+.home-content h4{
+    font-size: 3rem;
+    color: #000;
 }
 
 .home-img{
@@ -160,7 +188,7 @@ span{
 }
 
 .typing-text{
-    font-size: 34px;
+    font-size: 50px;
     font-weight: 600;
     min-width: 280px;
 }
@@ -192,19 +220,36 @@ span{
     margin:  5rem 0;
     color: #000;
 }
+.home-content h1{
+    color: #000;
+}
+.home-content p {
+    color: #000;
+}
 
 .about_container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
     gap: 5rem;
     background-color: #fff;
     line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    max-height: fit-content
 }
-.about_img img {
-    position: relative;
-    width: 40vh;
-    align-items: flex-start;
+
+.about_img iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+.about_img {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    width: 100%;              
+    min-height: 400px;    
 }
 
 .head1 {
@@ -215,22 +260,38 @@ span{
 
 .about_content {
     color: #000;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 40px;
     font-weight: 400;
 }
 
 .skillss {
     display: grid;
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: repeat(2, 1fr);  /* Two columns layout */
+    gap: 2rem;                             /* Space between columns */
+    justify-content: center;               /* Center horizontally */
+    align-items: start;                    /* Align content at the top */
+    padding: 20px;                         /* Padding around the section */                     /* Optional: Limit max width */
+    margin: auto;               
+    max-height: fit-content;                          
 }
 
 .skills {
-    width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;    /* Stack elements vertically */
+    align-items: center;       /* Center horizontally */
+    width: 100%;               /* Full width inside the grid cell */
+    padding: 20px;             /* Add padding for spacing */
+    max-height: fit-content;   /* Ensure max height fits the content */
+    overflow: hidden;    
     
 }
+
+.skill {
+    width: 100%;                /* Full width for bars */
+    margin-bottom: 2rem;        /* Spacing between skills */
+}
+
 
 .skills h1 {
     color: #000;
@@ -308,6 +369,7 @@ span{
     padding-top: 4rem;
     font-weight: 500;
     padding: 20px;
+    line-height: 3.5rem;
 }
 
 .interest {
@@ -639,10 +701,12 @@ span{
 
 .project-card h3 {
     color: #000;
+    font-size: 2rem;
 }
 
 .project-card p {
     color: #000;
+    font-size: 1.8rem;
 }
 
 .blog-content{
@@ -684,16 +748,16 @@ span{
 
 
 .blog-content h3 {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 .blog-content h2 {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
 }
 .blog-content p {
-    font-size: 1.4rem;
+    font-size: 2rem;
     padding: 3px;
 }
 
@@ -721,27 +785,31 @@ span{
 }
 
 .item1 {
-    animation-delay: calc(20s / 6 * (6 - 1));
+    animation-delay: calc(20s / 7 * (7 - 1));
 }
 
 .item2 {
-    animation-delay: calc(20s / 6 * (6 - 2));
+    animation-delay: calc(20s / 7 * (7 - 2));
 }
 
 .item3 {
-    animation-delay: calc(20s / 6 * (6 - 3));
+    animation-delay: calc(20s / 7 * (7 - 3));
 }
 
 .item4 {
-    animation-delay: calc(20s / 6 * (6 - 4));
+    animation-delay: calc(20s / 7 * (7 - 4));
 }
 
 .item5 {
-    animation-delay: calc(20s / 6 * (6 - 5));
+    animation-delay: calc(20s / 7 * (7 - 5));
 }
 
 .item6 {
-    animation-delay: calc(20s / 6 * (6 - 6));
+    animation-delay: calc(20s / 7 * (7 - 6));
+}
+
+.item7 {
+    animation-delay: calc(20s / 7 * (7 - 7));
 }
 
 .logo-slide i {
@@ -766,10 +834,52 @@ span{
     text-align: center;
     font-weight: 600;
     line-height: 20px;
-    background-color: #8c8b8b;
     max-width: 100%;
     font-size: 14px;
 }
+
+.footer {
+    background-color: #000;
+    max-width: auto;
+    max-height: 500px;
+}
+
+.footer h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.social-icons1 a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #ffffff;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.social-icons1 a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: fff;
+    box-shadow: 0  0 25px #fff;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width:995px){
@@ -880,9 +990,14 @@ span{
         display: grid;
         grid-template-columns: repeat(1 ,1fr);
     }
+
+    .blog .blog-container {
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
 }
 
-@media  (max-width: 1024px ){
+@media  (max-width: 1026px ){
     .project-box {
         display: grid;
         grid-template-columns: repeat(1 ,1fr);
@@ -893,6 +1008,33 @@ span{
     }
 }
 
+@media (max-width: 860px ){
+    .blog .blog-container {
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    
+}
+
+@media (max-width: 990px){
+    .about_container {
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+}
+
+@media (max-width: 1090px){
+    .blog .blog-content p {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+
+
 
 @keyframes cursor{
     to{
@@ -902,19 +1044,19 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "Kool";
+        content: "am Kool";
     }
     21%, 40%{
-        content: "Kool";
-    }
-    41%, 60%{
         content: "study at KMUTNB";
     }
-    61%, 80%{
+    41%, 60%{
         content: "study Com-Sci";
     }
+    61%, 80%{
+        content: "";
+    }
     81%, 100%{
-        content: "Script Writer";
+        content: "will Developer";
     }
 }
 
