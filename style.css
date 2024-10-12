@@ -71,18 +71,6 @@ header{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 section{
     min-height: 100vh;
     padding: 5rem 3% 5rem;
@@ -785,31 +773,19 @@ span{
 }
 
 .item1 {
-    animation-delay: calc(20s / 7 * (7 - 1));
+    animation-delay: calc(20s / 4 * (4 - 1));
 }
 
 .item2 {
-    animation-delay: calc(20s / 7 * (7 - 2));
+    animation-delay: calc(20s / 4 * (4 - 2));
 }
 
 .item3 {
-    animation-delay: calc(20s / 7 * (7 - 3));
+    animation-delay: calc(20s / 4 * (4 - 3));
 }
 
 .item4 {
-    animation-delay: calc(20s / 7 * (7 - 4));
-}
-
-.item5 {
-    animation-delay: calc(20s / 7 * (7 - 5));
-}
-
-.item6 {
-    animation-delay: calc(20s / 7 * (7 - 6));
-}
-
-.item7 {
-    animation-delay: calc(20s / 7 * (7 - 7));
+    animation-delay: calc(20s / 4 * (4 - 4));
 }
 
 .logo-slide i {
