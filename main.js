@@ -1,3 +1,20 @@
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+const navbarLinks = document.querySelectorAll('.navbar a');
+
+// Toggle menu on mobile
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+navbarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+    });
+});
+
+
 new Swiper('.card-wrapper', {
     loop: true,
     spaceBetween: 30,
@@ -54,6 +71,7 @@ window.addEventListener('click', (e) => {
         e.target.style.display = 'none';
     }
 });
+
 
 
 

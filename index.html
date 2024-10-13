@@ -13,28 +13,22 @@
     <title>Website Kool</title>
 </head>
 <body>
-    <header>
-        <div class="logo">Kool</div>
-            <div class="line-container">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-           <nav class="nav-bar">
-                <ul>
-                        <a href="" class="active"> Home </a>
-                        <a href="" class="active"> About </a>
-                        <a href="" class="active"> Interest </a>
-                        <a href="" class="active"> Education </a>
-                        <a href="" class="active"> Experience </a>
-                        <a href="" class="active"> Project </a>
-                        <a href="" class="active"> Credit </a>
-                </ul>
-           </nav> 
+    <header class="header">
+        <a href="#home" class="logo">Kool</a>
+
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" data-aos="zoom-in-up" data-aos-duration="4000" data-aos-delay="100">Home</a>
+            <a href="#about" data-aos="zoom-in-up" data-aos-duration="4000" data-aos-delay="200">About</a>
+            <a href="#education" data-aos="zoom-in-up" data-aos-duration="4000" data-aos-delay="300">Education</a>
+            <a href="#experience" data-aos="zoom-in-up" data-aos-duration="4000" data-aos-delay="400">Experience</a>
+            <a href="#project" data-aos="zoom-in-up" data-aos-duration="4000" data-aos-delay="500">Project</a>
+            <a href="#blog" data-aos="zoom-in-up" data-aos-duration="4000" data-aos-delay="600">Blog</a>
+            <a href="#credit" data-aos="zoom-in-up" data-aos-duration="4000" data-aos-delay="700">Credit</a>
+        </nav>
     </header>
-
-
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-img">
             <img src="picture/picpro.png" alt="">
         </div>
@@ -46,7 +40,7 @@
         </div>
     </section>
 
-    <section class="about_container">
+    <section class="about_container" id="about">
 
         <div class="about_img" data-aos="slide-right" data-aos-duration="4000">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/7A4XvCSlyxw?si=Qbpcryj6-Icxq2is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -62,8 +56,8 @@
             <div class="social-icons">
                 <a href="https://www.instagram.com/chayang_koo.l/"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.facebook.com/chayangkul.sr/"><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@kkoolnoi5226"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/KKooLNoI/PortfolioKool"><i class="fa-brands fa-github"></i></a>
             </div>   
         </div>
     </section>
@@ -120,7 +114,7 @@
             </div>
         </section>
 
-        <section class="services" id="services">
+        <section class="services" id="services" >
             <h2 class="heading">Interest</h2>
 
             <div class="service-container">
@@ -175,7 +169,7 @@
             </div>
         </section>
         
-    <section class="education_container">
+    <section class="education_container" id="education">
        <h2 class="heading"><i class='bx bxs-book'></i>  Education</h2>
     <div class="timeline_items">
 
@@ -227,7 +221,7 @@
     </div>
     </section>
 
-    <section class="experience swiper">
+    <section class="experience swiper" id="experience">
         <h2 class="heading"><i class='bx bxs-hourglass-bottom'></i>  Experience</h2>
         <div class="card-wrapper" data-aos="fade-up" data-aos-duration="4000" data-aos-delay="200">
             <ul class="card-list swiper-wrapper">
@@ -253,7 +247,7 @@
                     <button class="card-link" data-popup="popup3">
                         <img src="picture/3.png" alt="Card Image" class="card-image">
                         <p class="badge">การเเข่งขันกีฬาสานสัมพันธ์ RMUTP ENG.Junior Fresh Games </p>
-                        <h2 class="card-title">ได้เข้าร่วมการแข่งขันกีฬาสานสัมพันธ์ ทั้งเป็นนักกีฬา ทำสแตนเชียร์ และ ดูแลการเชียร์</h2>          
+                        <h2 class="card-title">ได้เข้าร่วมการแข่งขันกีฬาสานสัมพันธ์</h2>          
                     </button>
                 </li>
 
@@ -262,10 +256,7 @@
                         <img src="picture/5.png" alt="Card Image" class="card-image">
                         <p class="badge">การแข่งขันกีฬาสัมพันธ์ราชมงคลพระนคร 
                             “พระนครเกมส์” ครั้งที่ 16</p>
-                        <h2 class="card-title">
-                            ประเภทชายคู่ รางวัลรองชนะเลิศอันดับสอง และ
-                            ประเภทคู่ผสม รางวัลชนะเลิศ
-                            </h2>
+                        <h2 class="card-title">ได้เข้าร่วมการแข่งขันกีฬาสัมพันธ์ราชมงคลพระนคร กีฬาแบดมินตัน</h2>
                     </button>
                 </li>
 
@@ -311,7 +302,7 @@
                             </h2>
                         <p>รับหน้าที่สตาฟคุมแสตนเชียร์ ได้ดูแลและ
                             จัดทำสแตนเชียร์  รวมถึงเป็นนักกีฬา
-                            ลงเเข่งให้กับสาขาอีกด้วย</p>
+                            </p>
                     </div>
                 </div>
 
@@ -321,7 +312,8 @@
                         <img src="picture/5.png" alt="">
                         <h2>การแข่งขันกีฬาสัมพันธ์ราชมงคลพระนคร 
                             “พระนครเกมส์” ครั้งที่ 16</h2>
-                        <p>This is the content for Popup 3.</p>
+                        <p>ประเภทชายคู่ รางวัลรองชนะเลิศอันดับสอง และ
+                            ประเภทคู่ผสม รางวัลชนะเลิศ</p>
                     </div>
                 </div>
 
@@ -338,7 +330,7 @@
 
         </div>
     </section>
-    <section class="project" class="projects">
+    <section class="project" class="projects" id="project">
         <h2 class="heading"><i class='bx bx-edit'></i>  Project</h2>
 
 
@@ -379,7 +371,7 @@
     </section>
 
 
-    <section class="blog">
+    <section class="blog" id="blog">
         <h1 class="heading">Blog</h1>
         <h2 class="headblog">Cyber Security</h2>
         <div class="blog-container">
@@ -439,7 +431,7 @@
             </div>
         </div>
 
-       <div class="credit">
+       <div class="credit" id="credit">
             <h2>Credit</h2>
             <div class="logo-slide">
                 <div class="item item1"><i class='bx bxl-html5' ></i></div>
@@ -471,8 +463,8 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
             <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>   
-        <h1> &copy;Copyright All rights reserved</h1>
 
+        <h1> &copy;Copyright All rights reserved</h1>
     </div>
 
 
